@@ -21,9 +21,6 @@ type User struct {
 
 	// The email address for this user.
 	Email string
-
-	// The ID of the tenant to which this user belongs.
-	TenantID string `json:"tenant_id"`
 }
 
 // Role assigns specific responsibilities to users, allowing them to accomplish

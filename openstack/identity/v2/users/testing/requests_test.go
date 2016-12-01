@@ -30,7 +30,6 @@ func TestList(t *testing.T) {
 				Username: "jqsmith",
 				Email:    "john.smith@example.org",
 				Enabled:  true,
-				TenantID: "12345",
 			},
 			{
 				ID:       "u1001",
@@ -38,7 +37,6 @@ func TestList(t *testing.T) {
 				Username: "jqsmith",
 				Email:    "jane.smith@example.org",
 				Enabled:  true,
-				TenantID: "12345",
 			},
 		}
 		th.CheckDeepEquals(t, expected, actual)
@@ -70,7 +68,6 @@ func TestCreateUser(t *testing.T) {
 		ID:       "c39e3de9be2d4c779f1dfd6abacc176d",
 		Email:    "new_user@foo.com",
 		Enabled:  false,
-		TenantID: "12345",
 	}
 
 	th.AssertDeepEquals(t, expected, user)
@@ -90,7 +87,6 @@ func TestGetUser(t *testing.T) {
 		ID:       "c39e3de9be2d4c779f1dfd6abacc176d",
 		Email:    "new_user@foo.com",
 		Enabled:  false,
-		TenantID: "12345",
 	}
 
 	th.AssertDeepEquals(t, expected, user)
@@ -118,7 +114,6 @@ func TestUpdateUser(t *testing.T) {
 		ID:       id,
 		Email:    "new_email@foo.com",
 		Enabled:  true,
-		TenantID: "12345",
 	}
 
 	th.AssertDeepEquals(t, expected, user)

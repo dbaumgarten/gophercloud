@@ -206,7 +206,6 @@ func PrintUser(t *testing.T, user *users.User) {
 	t.Logf("Username: %s", user.Username)
 	t.Logf("Enabled: %t", user.Enabled)
 	t.Logf("Email: %s", user.Email)
-	t.Logf("TenantID: %s", user.TenantID)
 }
 
 // PrintUserRole will print the roles that a user has been granted.

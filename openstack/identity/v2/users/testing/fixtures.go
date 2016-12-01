@@ -25,16 +25,14 @@ func MockListUserResponse(t *testing.T) {
 						"name": "John Smith",
             "username": "jqsmith",
             "email": "john.smith@example.org",
-            "enabled": true,
-						"tenant_id": "12345"
+            "enabled": true
         },
         {
             "id": "u1001",
 						"name": "Jane Smith",
             "username": "jqsmith",
             "email": "jane.smith@example.org",
-            "enabled": true,
-						"tenant_id": "12345"
+            "enabled": true
         }
     ]
 }
@@ -65,7 +63,6 @@ func mockCreateUserResponse(t *testing.T) {
 {
     "user": {
         "name": "new_user",
-        "tenant_id": "12345",
         "enabled": false,
         "email": "new_user@foo.com",
         "id": "c39e3de9be2d4c779f1dfd6abacc176d"
@@ -87,7 +84,6 @@ func mockGetUserResponse(t *testing.T) {
 {
 		"user": {
 				"name": "new_user",
-				"tenant_id": "12345",
 				"enabled": false,
 				"email": "new_user@foo.com",
 				"id": "c39e3de9be2d4c779f1dfd6abacc176d"
@@ -119,7 +115,6 @@ func mockUpdateUserResponse(t *testing.T) {
 {
 		"user": {
 				"name": "new_name",
-				"tenant_id": "12345",
 				"enabled": true,
 				"email": "new_email@foo.com",
 				"id": "c39e3de9be2d4c779f1dfd6abacc176d"
